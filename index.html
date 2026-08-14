@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ASFAR — Official Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #111;
+    }
+
+    header {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      background: #111;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 4px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: #deded9;
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 15vw, 120px);
+      letter-spacing: 10px;
+      font-weight: 900;
+    }
+
+    .hero p {
+      margin: 18px 0 28px;
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .button {
+      display: inline-block;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .product {
+      background: white;
+      padding-bottom: 20px;
+    }
+
+    .product-image {
+      height: 250px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-name {
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .price {
+      color: #555;
+    }
+
+    .about {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 80px 25px;
+    }
+
+    .about h2 {
+      font-size: 35px;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 8px;
+        font-size: 10px;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">ASFAR</div>
+
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>ASFAR</h1>
+      <p>Built for those who move different.</p>
+      <a class="button" href="#shop">SHOP COLLECTION</a>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+
+    <h2>NEW ARRIVALS</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <div class="product-image">
+          PRODUCT IMAGE
+        </div>
+
+        <div class="product-info">
+          <div class="product-name">ASFAR Essential Tee</div>
+          <div class="price">PKR 2,499</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          PRODUCT IMAGE
+        </div>
+
+        <div class="product-info">
+          <div class="product-name">ASFAR Signature Shirt</div>
+          <div class="price">PKR 3,499</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          PRODUCT IMAGE
+        </div>
+
+        <div class="product-info">
+          <div class="product-name">ASFAR Hoodie</div>
+          <div class="price">PKR 4,999</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          PRODUCT IMAGE
+        </div>
+
+        <div class="product-info">
+          <div class="product-name">ASFAR Oversized Tee</div>
+          <div class="price">PKR 2,799</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <h2>ASFAR</h2>
+
+    <p>
+      ASFAR is more than clothing. It's a statement of individuality,
+      confidence and movement. Welcome to the official ASFAR store.
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 ASFAR. All rights reserved.
+  </footer>
+
+</body>
+</html>
